@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+
+    display: grid;
+
+    padding-block: 80px;
+    padding-inline: 20px;
+}
+
+.main{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 15px;
+
+    text-align: center;
+
+    width: 100%;
+    max-width: 400px;
+
+    margin-inline: auto;
+}
+
+.main__img-container{
+    background-color: hsl(277, 69%, 39%);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.main__img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    vertical-align: top;
+
+    opacity: .5;
+
+    width: 100%;
+    height: 100%;
+}
+
+.main__content{
+    padding-block: 40px;
+    padding-inline: 20px;
+}
+
+.main__maintile{
+    color: hsl(0, 0%, 100%);
+
+    font-size: 30px;
+}
+
+.main__maintile span{
+    color: hsl(277, 64%, 61%);
+}
+
+.main__paragraphy{
+    color: hsla(0, 0%, 100%, 0.6);
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    margin-top: 20px;
+}
+
+.main__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    list-style: none;
+
+    margin-top: 36px;
+}
+
+.main__item h2{
+    color: hsl(0, 0%, 100%);
+    
+    text-transform: uppercase;
+}
+
+.main__item p{
+    color: hsla(0, 0%, 100%, 0.6);
+
+    font-size: 15px;
+    text-transform: uppercase;
+
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (min-width: 1200px){
+    .main{
+        max-width: 1250px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'cont img';
+    
+        text-align: left;
+    }
+
+    .main__img-container{
+        grid-area: img;
+    }
+
+    .main__img-container,
+    .main__img{
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 15px;
+    }
+
+    .main__content{
+        padding-inline: 60px;
+        padding-block: 0;
+
+        align-self: center;
+    }
+
+    .main__maintile{
+        font-size: 45px;
+
+        max-width: 500px;
+    }
+
+    .main__paragraphy{
+        margin-top: 35px;
+
+        width: 400px;
+        max-width: 450px;
+    }
+
+    .main__lista{
+        flex-direction: row;
+        gap: 70px;
+        
+        margin-top: 60px;
+    }
+}
+
