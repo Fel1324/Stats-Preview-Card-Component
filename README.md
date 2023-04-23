@@ -37,7 +37,7 @@ Clique [aqui](https://fel1324.github.io/Stats-Preview-Card-Component/) para aces
 <h2 id="desc">📖 Descrição do projeto</h2>
 
 <p align="justify">
-    Stats é um site que tem a proposta de oferecer insights que irão ajudar as empresas clientes a crescerem.
+    Stats é um site que tem como proposta oferecer insights para ajudar as empresas clientes a crescerem.
 </p>
 
 <br>
